@@ -1,0 +1,47 @@
+<!DOCTYPE html>   
+<html>
+<head>
+<title>Infix2Postfix Conversion</title>
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<link href="infix2postfix.css" type="text/CSS" rel="stylesheet">
+<script type="text/javascript" src="infix2postfix.js">
+</script>
+</head>
+<body>
+<div id="main">
+<h1>Infix To Postfix/Prefix Converter</h1>
+<div id="theory">
+<p>The way to write arithmetic expression is known as a notation. An arithmetic expression<br>
+ can be written in three different but equivalent notations, i.e., without changing the essence<br>
+ or output of an expression. <br>
+These notations are : 
+<ul>
+<em>
+<li>Infix Notation</li>
+<li>Prefix (Polish) Notation</li>
+<li>Postfix (Reverse-Polish) Notation</li></em>
+</ul></p>
+<p><em><strong>Infix expression:</strong></em> The expression of the form a operator b. When an operator is in-between<br>
+ every pair of operands.<br> <br>
+<em><strong>Postfix expression:</strong></em> The expression of the form a b operator. When an operator is followed<br>
+ for every pair of operands.<br><br>
+<em><strong>Prefix expression:</strong></em> The expression of the form operator a b. When an operator is preceded<br>
+ for every pair of operands.
+ <p>For using the below converter just follow these simple steps:<br>
+ -Firstly, select the button indicating the conversion i.e InfixToPrefix (or) InfixToPostfix<br>
+ -Secondly, enter the infix expression in respective text box<br>
+ -Finally, by clicking the Get postfix/prefix expression button you will get the desired result.</p>
+</div><div id="rect">
+<div id="pre_pos">
+<button id="prefix" onclick="infixToPrefix()">InfixToPrefix</button>
+<button id="post" onclick="infixToPostfix()">InfixToPostfix</button>
+</div>
+<div id="boxes">
+<input id="infix" placeholder="Enter infix expression...(ex:a+b)">
+<button id="button">Get Postfix/Prefix Expression</button>
+<input id="postfix" placeholder="Postfix Expression/Prefix Expression is...">
+</div>
+<footer>© Mounika Boini | 2021</footer>
+</div>
+</body>
+</html>
